@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deupload - Decentralized File Storage</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-roboto">
+    <!-- Header -->
+    <nav class="sticky top-0 bg-white z-50">
+      <div class="container mx-auto flex flex-wrap items-center justify-between p-4">
+        <div class="flex items-center">
+          <img src="./images/deupload.svg" alt="Deupload logo" class="h-8 w-auto" />
+        </div>
+        <div class="block lg:hidden">
+          <button class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-500 hover:text-gray-700 hover:border-gray-700">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+          <div class="text-sm lg:flex-grow">
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 mr-4">Features</a>
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 mr-4">Solutions</a>
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 mr-4">NFT Storage</a>
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 mr-4">Pricing</a>
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 mr-4">Developers</a>
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900">Resources</a>
+          </div>
+          <div class="flex items-center">
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 mr-4">App</a>
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 mr-4">English</a>
+            <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-black mt-4 lg:mt-0 mr-4">Sign in</a>
+            <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white bg-bee border-bee hover:border-transparent hover:text-bee hover:bg-white mt-4 lg:mt-0">Create an account</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Page -->
+    <section class="bg-[#1A284E] py-20 text-white" data-aos="fade-up">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Building the world's best IPFS Storage<br />
+            powered by decentralized network.
+          </h1>
+          <p class="text-lg md:text-xl">
+            We make decentralized file storage on IPFS as simple as using the tools you love and<br />
+            interoperable via API with developer-friendly documentation.
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <img src="./images/homepage/img1.svg" alt="IPFS Storage Illustration" class="max-w-full h-auto" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Mission -->
+    <section class="py-20" data-aos="fade-up">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap items-center">
+          <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">
+              Our mission is to protect<br />
+              human knowledge through<br />
+              freedom of information.
+            </h2>
+            <p class="text-txt text-lg">
+              Our goal is to make decentralized storage accessible and<br />
+              easy to use for everyone. We're doing this by building a<br />
+              scalable, secure and performant access layer to<br />
+              decentralized storage networks, with a seamless user<br />
+              experience interface.
+            </p>
+          </div>
+          <div class="w-full lg:w-1/2">
+            <img src="./images/ourMission/img1.svg" alt="Our Mission Illustration" class="max-w-full h-auto" />
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center mt-12 gap-6">
+          <div class="bg-bee text-white rounded-lg p-6 text-center" data-aos="zoom-in" data-aos-delay="100">
+            <img src="./images/ourMission/pin.svg" alt="Pin Icon" class="mx-auto mb-4 bg-white p-4 rounded-full" />
+            <h3 class="text-4xl font-bold mb-2">500M+</h3>
+            <p>IPFS pinned</p>
+          </div>
+          <div class="bg-[#00E5FF] text-white rounded-lg p-6 text-center" data-aos="zoom-in" data-aos-delay="200">
+            <img src="./images/ourMission/storage.svg" alt="Storage Icon" class="mx-auto mb-4 bg-white p-4 rounded-full" />
+            <h3 class="text-4xl font-bold mb-2">100TB+</h3>
+            <p>Data in storage</p>
+          </div>
+          <div class="bg-bee text-white rounded-lg p-6 text-center" data-aos="zoom-in" data-aos-delay="300">
+            <img src="./images/ourMission/request.svg" alt="Request Icon" class="mx-auto mb-4 bg-white p-4 rounded-full" />
+            <h3 class="text-4xl font-bold mb-2">200K+</h3>
+            <p>Request per day</p>
+          </div>
+          <div class="bg-bee text-white rounded-lg p-6 text-center" data-aos="zoom-in" data-aos-delay="400">
+            <img src="./images/ourMission/users.svg" alt="Users Icon" class="mx-auto mb-4 bg-white p-4 rounded-full" />
+            <h3 class="text-4xl font-bold mb-2">50K+</h3>
+            <p>Happy users</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-20" data-aos="fade-up">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap items-center">
+          <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+            <img src="./images/ourStory/img.svg" alt="Our Story Illustration" class="max-w-full h-auto" />
+          </div>
+          <div class="w-full lg:w-1/2">
+            <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+            <p class="text-txt mb-4">
+              In the past few years, I have been learning about blockchain and found that IPFS is a distributed system for storing and accessing files, websites, applications and data developed by Juan Benet.
+            </p>
+            <p class="text-txt mb-4">
+              IPFS is an amazing technology that changes the way humans and computers communicate in a decentralized world. However, accessing and using this technology is still difficult for an average user.
+            </p>
+            <p class="text-txt mb-4">
+              Why is it difficult? To store a file on IPFS in a decentralized network like Filecoin, you need some computer knowledge to install software on your desktop, buy some cryptocurrency, and learn how to interact with the network.
+            </p>
+            <p class="text-txt mb-4">
+              For that reason, I have developed a solution to store files on IPFS in a simpler way but still keep secure called Deupload. Deupload lets you store files on IPFS with file sharing, file request, and team collaboration features with a seamless experience.
+            </p>
+            <p class="text-txt">
+              I hope Deupload can improve the file storage experience on a decentralized network and realize IPFS's vision of a future decentralized world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get know us -->
+    <section class="py-20 bg-[#E5E5E5]" data-aos="fade-up">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">Get to know us</h2>
+          <p class="text-txt text-lg">
+            Deupload is a 100% remote team. We believe that creative collaboration can happen<br />
+            anywhere and want our team to work where they feel most comfortable and inspired.
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6">
+          <img src="./images/know us/person1.svg" alt="Team Member 1" class="rounded-full" data-aos="zoom-in" data-aos-delay="100" />
+          <img src="./images/know us/person2.svg" alt="Team Member 2" class="rounded-full" data-aos="zoom-in" data-aos-delay="200" />
+          <img src="./images/know us/person3.svg" alt="Team Member 3" class="rounded-full" data-aos="zoom-in" data-aos-delay="300" />
+          <img src="./images/know us/person4.svg" alt="Team Member 4" class="rounded-full" data-aos="zoom-in" data-aos-delay="400" />
+          <img src="./images/know us/person5.svg" alt="Team Member 5" class="rounded-full" data-aos="zoom-in" data-aos-delay="500" />
+          <img src="./images/know us/person6.svg" alt="Team Member 6" class="rounded-full" data-aos="zoom-in" data-aos-delay="600" />
+          <img src="./images/know us/person7.svg" alt="Team Member 7" class="rounded-full" data-aos="zoom-in" data-aos-delay="700" />
+          <img src="./images/know us/person8.svg" alt="Team Member 8" class="rounded-full" data-aos="zoom-in" data-aos-delay="800" />
+          <img src="./images/know us/person9.svg" alt="Team Member 9" class="rounded-full" data-aos="zoom-in" data-aos-delay="900" />
+          <img src="./images/know us/person10.svg" alt="Team Member 10" class="rounded-full" data-aos="zoom-in" data-aos-delay="1000" />
+          <img src="./images/know us/person11.svg" alt="Team Member 11" class="rounded-full" data-aos="zoom-in" data-aos-delay="1100" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 text-[#5C5F6E] bg-[#E5E5E5]" data-aos="fade-up">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-bold text-black text-center mb-12">Testimonials</h2>
+        <div class="flex flex-wrap justify-center gap-8">
+          <div class="bg-white rounded-lg p-8 shadow-lg max-w-md" data-aos="fade-right">
+            <p class="text-lg mb-6">
+              Our company uses Deupload, and I also use Box for sensitive data etc. Deupload is amazing - so much more than just cloud storage. You can watch videos, share photos, scan documents, electronic sign and send documents, secure sensitive data and so much more.
+            </p>
+            <div class="flex items-center">
+              <img src="./images/testimonials/person1.svg" alt="Rodrigo Duarte" class="w-16 h-16 rounded-full mr-4" />
+              <div>
+                <h3 class="font-bold text-black text-xl">Rodrigo Duarte</h3>
+                <p class="text-[#838696]">Graphic Designer</p>
+              </div>
+              <div class="hidden md:flex ml-auto">
+                <img src="./images/testimonials/star.svg" alt="5 Star Rating" class="h-6" />
+                <img src="./images/testimonials/star.svg" alt="5 Star Rating" class="h-6" />
+                <img src="./images/testimonials/star.svg" alt="5 Star Rating" class="h-6" />
+                <img src="./images/testimonials/star.svg" alt="5 Star Rating" class="h-6" />
+                <img src="./images/testimonials/star.svg" alt="5 Star Rating" class="h-6" />
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-8 shadow-lg max-w-md" data-aos="fade-left">
+            <p class="text-lg mb-6">
+              I love using Deupload for work and personally because it is very intuitive to use and easy to share files with anyone. Our company moved from dropbox over to box, due to security purposes which would be my concern but other than that it syncs very quickly and allows collaboration and file sharing a lot easier for your team/company.
+            </p>
+            <div class="flex items-center">
+              <img src="./images/testimonials/person2.svg" alt="Ivone Josan" class="w-16 h-16 rounded-full mr-4" />
+              <div>
+                <h3 class="font-bold text-black text-xl">Ivone Josan</h3>
+                <p class="text-[#838696]">Marketing Assistant</p>
+              </div>
+              <div class="hidden md:flex ml-auto">
+                <img src="./images/testimonials/star.svg" alt="5 Star Rating" class="h-6" />
+                <img src="./images/testimonials/star.svg" alt="5 Star Rating" class="h-6" />
+                <img src="./images/testimonials/star.svg" alt="5 Star Rating" class="h-6" />
+                <img src="./images/testimonials/star.svg" alt="5 Star Rating" class="h-6" />
+                <img src="./images/testimonials/star.svg" alt="5 Star Rating" class="h-6" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Vision -->
+    <section class="py-20" data-aos="fade-up">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl md:text-7xl font-bold mb-6">Our vision</h2>
+        <p class="text-[#5C5F6E] text-lg mb-12">
+          Our vision is that Deupload will democratize distributed data storage on a<br />
+          decentralized network in the next decade and empower everyone to escape<br />
+          the control of centralized data companies.
+        </p>
+        <img src="./images/misson/img1.svg" alt="Our Vision Illustration" class="max-w-full h-auto mx-auto" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h2 class="text-xl font-bold mb-4">What is Deupload?</h2>
+            <p class="text-sm">
+              Deupload is a cloud storage service based on Blockchain and Web3 technology, designed to help teams collaborate and share files in a completely private way like never before.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold mb-4">Products</h2>
+            <ul class="text-sm space-y-2">
+              <li><a href="#" class="hover:text-gray-300">Features</a></li>
+              <li><a href="#" class="hover:text-gray-300">Solutions</a></li>
+              <li><a href="#" class="hover:text-gray-300">Pricing</a></li>
+              <li><a href="#" class="hover:text-gray-300">Token</a></li>
+              <li><a href="#" class="hover:text-gray-300">Security</a></li>
+              <li><a href="#" class="hover:text-gray-300">Comparison</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold mb-4">Resource</h2>
+            <ul class="text-sm space-y-2">
+              <li><a href="#" class="hover:text-gray-300">Whitepaper</a></li>
+              <li><a href="#" class="hover:text-gray-300">Developer</a></li>
+              <li><a href="#" class="hover:text-gray-300">Brand Kits</a></li>
+              <li><a href="#" class="hover:text-gray-300">Compliance</a></li>
+              <li><a href="#" class="hover:text-gray-300">Privacy Policy</a></li>
+              <li><a href="#" class="hover:text-gray-300">Terms of service</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold mb-4">Community</h2>
+            <ul class="text-sm space-y-2">
+              <li><a href="#" class="hover:text-gray-300">Guide</a></li>
+              <li><a href="#" class="hover:text-gray-300">Blog</a></li>
+              <li><a href="#" class="hover:text-gray-300">FAQs</a></li>
+              <li><a href="#" class="hover:text-gray-300">Forum</a></li>
+              <li><a href="#" class="hover:text-gray-300">Help center</a></li>
+              <li><a href="#" class="hover:text-gray-300">Support desk</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-wrap flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-8">
+          <div class="flex flex-wrap gap-4 space-x-4 mb-4 md:mb-0">
+            <img src="./images/footer/company1.svg" alt="Partner logo" class="h-8"/>
+            <img src="./images/footer/company2.svg" alt="Partner logo" class="h-8"/>
+            <img src="./images/footer/company3.svg" alt="Partner logo" class="h-8"/>
+            <img src="./images/footer/company4.svg" alt="Partner logo" class="h-8"/>
+          </div>
+          <p class="text-sm">&copy; 2022 Deupload. Powered by Conikal LLC</p>
+        </div>
+        <div class="mt-4 flex justify-center md:justify-end space-x-4">
+          <a href="#" class="text-white hover:text-gray-300">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"/>
+            </svg>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+            </svg>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+            </svg>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 100,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
